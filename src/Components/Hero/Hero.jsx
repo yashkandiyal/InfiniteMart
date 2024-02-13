@@ -49,7 +49,7 @@ const Hero = () => {
   return (
     <>
       <motion.div
-        className="flex flex-col items-center md:flex-none md:items-start h-[260vh]"
+        className="flex flex-col items-center md:flex-none md:items-start md:h-[300vh] h-[370vh]"
         id="hero-section"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
@@ -61,14 +61,12 @@ const Hero = () => {
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.5 }}
-            
           >
             <h1 className=" text-[6rem] md:text-9xl leading-tight">
               <p className="tracking-wide">Unlock</p> Your{" "}
               <br className="md:hidden" />
               Style
             </h1>
-            
           </motion.div>
 
           <motion.div
@@ -154,12 +152,12 @@ const Hero = () => {
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.5 }}
-          className="flex flex-col md:mx-auto mt-40 gap-28 items-center justify-between"
+          className="flex flex-col md:mx-auto mt-40 md:gap-28 gap-24  items-center justify-between"
         >
-          <h1 className="text-5xl font-semibold mt-20 mb-10">
+          <h1 className="text-[2.75rem] md:text-5xl font-semibold md:mt-20  mb-10">
             Shop by category
           </h1>
-          <div className="flex flex-col md:flex-row justify-around md:gap-[29rem]">
+          <div className="flex flex-col md:flex-row justify-around md:gap-[29rem] gap-24">
             <motion.div
               className="relative group w-80 h-80 "
               whileHover={{ scale: 1.1 }}
@@ -178,7 +176,7 @@ const Hero = () => {
               </h1>
               <p className="text-xl text-center pt-2">8 Products Available</p>
               <motion.div
-                className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 shadow-2xl"
+                className="absolute inset-0 flex gap-8 md:gap-0 items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 shadow-2xl  "
                 style={{
                   backgroundColor: "rgba(0, 0, 0, 0.6)",
                   borderRadius: "10px",
@@ -208,7 +206,7 @@ const Hero = () => {
               </div>
 
               <motion.div
-                className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                className="absolute inset-0 flex  items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300"
                 style={{
                   backgroundColor: "rgba(0, 0, 0, 0.6)",
                   borderRadius: "10px",
@@ -218,7 +216,7 @@ const Hero = () => {
               </motion.div>
             </motion.div>
           </div>
-          <div className="flex flex-col md:flex-row md:gap-[29rem] justify-around">
+          <div className="flex flex-col md:flex-row md:gap-[29rem] gap-24 justify-around">
             <motion.div
               className="relative group w-80 h-80"
               whileHover={{ scale: 1.1 }}
@@ -236,7 +234,7 @@ const Hero = () => {
               </h1>
               <p className="text-xl text-center pt-2">10 Products Available</p>
               <motion.div
-                className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                className="absolute inset-0 flex  items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300"
                 style={{
                   backgroundColor: "rgba(0, 0, 0, 0.6)",
                   borderRadius: "10px",

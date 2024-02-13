@@ -19,7 +19,7 @@ const CustomNextArrow = ({ onClick }) => (
       justifyContent: "center",
       alignItems: "center",
       cursor: "pointer",
-      transition: "opacity .5s ease-in-out", 
+      transition: "opacity .5s ease-in-out",
       opacity: 1,
     }}
   />
@@ -40,12 +40,10 @@ const CustomPrevArrow = ({ onClick }) => (
       justifyContent: "center",
       alignItems: "center",
       cursor: "pointer",
-      transition: "opacity 0.5s ease-in-out", 
+      transition: "opacity 0.5s ease-in-out",
       opacity: 1,
     }}
-  >
-    
-  </div>
+  ></div>
 );
 
 const MyCarousel = () => {
@@ -74,28 +72,26 @@ const MyCarousel = () => {
       breakpoint: { max: 464, min: 0 },
       items: 1,
       slidesToSlide: 1, // optional, default to 1.
-      
     },
   };
 
   return (
-    <div className="h-screen">
-      <h1 className="text-center mb-28 text-4xl">Recently viewed</h1>
+    <div className="h-[76vh] md:h-screen">
+      <h1 className="text-center mb-28 mt-[2.5rem] md:mt-0 text-4xl">
+        Recently viewed
+      </h1>
       <div>
         {isCardVisible && (
           <Carousel
             responsive={responsive}
             customNextArrow={<CustomNextArrow />}
             customPrevArrow={<CustomPrevArrow />}
-            
             infinite={false}
             draggable={false}
-            
             itemClass="carousel-item"
             transitionDuration={500}
             slidesToSlide={3}
-            
-          > 
+          >
             {CarouselContent.map((item, index) => (
               <Card
                 key={item.id}
@@ -108,8 +104,6 @@ const MyCarousel = () => {
                 color={item.color}
               />
             ))}
-         
-            
           </Carousel>
         )}
       </div>

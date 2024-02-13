@@ -9,7 +9,7 @@ const Card = ({ name, image, price, description, color, quantity, size }) => {
   const [qty, setQty] = useState("");
   const [show, setShow] = useState(false);
   return (
-    <div className="relative flex flex-col text-gray-700 bg-white shadow-2xl   rounded-xl w-80 md:ml-28 ml-[2rem]">
+    <div className="relative flex flex-col text-gray-700 bg-white shadow-2xl gap-0  rounded-xl w-80 md:ml-28 ml-[2rem]">
       <div className="relative mx-3 mt-1 overflow-hidden text-gray-700 bg-white  rounded-xl h-72">
         <img src={image} className="object-cover w-full h-full" alt={name} />
       </div>

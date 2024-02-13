@@ -55,7 +55,7 @@ export default function MyNavbar() {
           </NavbarContent>
 
           <NavbarContent
-            className="hidden sm:flex gap-4 mr-36"
+            className="hidden sm:flex gap-[3.5rem] md:gap-4 mr-36"
             justify="center"
           >
             <NavbarItem>
@@ -93,7 +93,7 @@ export default function MyNavbar() {
             </NavbarItem>
           </NavbarContent>
 
-          <NavbarContent className=" flex justify-between gap-[3.3rem] lg:gap-3">
+          <NavbarContent className=" flex justify-between gap-[3.3rem] md:gap-3">
             <NavbarItem>
               <div className="relative" id="input-field">
                 <input
@@ -107,7 +107,7 @@ export default function MyNavbar() {
               </div>
             </NavbarItem>
             <NavbarItem>
-              <div className="flex items-center gap-4">
+              <div className="flex items-center gap-12 md:gap-4">
                 <div className="flex items-center gap-3">
                   <RouterLink to="/purchaseditems">
                     <Badge
